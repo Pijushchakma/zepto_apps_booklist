@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="icon.png" type="image/png" />
+    <title>Book Store</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <a href="index.html">Home</a>
+      <!-- <a href="wishlist.html">Wishlist</a> -->
+    </nav>
+
+    <!-- Main Container -->
+    <div class="container">
+      <!-- Search and Filters -->
+      <div class="filters">
+        <input
+          type="text"
+          id="search-bar"
+          class="search-bar"
+          placeholder="Search for books..."
+        />
+        <select id="genre-filter" class="dropdown">
+          <option value="">All Genres</option>
+          <option value="Fiction">Fiction</option>
+          <option value="Science">Science</option>
+          <!-- Add more options here -->
+        </select>
+      </div>
+
+      <!-- Book List -->
+      <div id="book-list" class="book-list">
+        <!-- Books will be inserted here via JS -->
+      </div>
+
+      <!-- Pagination -->
+      <div class="pagination">
+        <button id="prev-page" class="pagination-btn">Previous</button>
+        <button id="next-page" class="pagination-btn">Next</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
